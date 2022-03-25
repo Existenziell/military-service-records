@@ -1,0 +1,31 @@
+{
+  "name": "academic-records",
+  "author": "Christof Bauer <bauer.christof@gmail.com> (http://christof.digital/)",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "ethers": "^5.6.1",
+    "framer-motion": "^6.2.8",
+    "mongodb": "^4.4.1",
+    "next": "latest",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "17.0.2",
+    "react-birthday-picker": "^1.0.5",
+    "react-datepicker": "^4.7.0",
+    "react-dom": "17.0.2",
+    "react-select": "^5.2.2",
+    "react-spinners": "^0.11.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
+  }
+}

@@ -1,0 +1,75 @@
+/* --------------------------------------------------------
+Style Sheet for app.christof.digital
+
+version: 0.9
+last modified: 15.12.2021 by Christof Bauer
+author: Christof Bauer
+email: bauer.christof@gmail.com
+----------------------------------------------------------*/
+
+:root {
+  --color-brand: #4b5320;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ==========================================================================
+	General overrides and utilities
+	========================================================================== */
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply bg-brand bg-opacity-50;
+}
+
+::-moz-selection {
+  @apply bg-brand bg-opacity-50;
+}
+
+.link {
+  @apply cursor-pointer underline underline-offset-2 outline-none transition-all duration-300;
+}
+
+.link:hover {
+  @apply no-underline rounded transition-all duration-500 text-white px-1 bg-brand; 
+}
+
+/* ==========================================================================
+	Navigation
+	========================================================================== */
+
+.active-nav {
+  @apply md:bg-gray-200 bg-opacity-50;
+}
+
+
+/* ==========================================================================
+	Forms 
+	========================================================================== */
+
+.button {
+  @apply bg-brand text-white py-3 px-6 rounded shadow-lg transition-all cursor-pointer font-mono
+    hover:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand;
+}
+
+.connect-button {
+  @apply px-4 py-2 border border-brand hover:bg-brand/80 hover:scale-105 transition-all;
+}
+
+.valid {
+  @apply border-green-600 border-2;
+}
+
+.changed {
+  @apply border-orange-400 border-2;
+}
+
+.invalid {
+  @apply border-red-600 border-2;
+}
