@@ -11,7 +11,7 @@ export default async (req, res) => {
       return
     }
 
-    db.collection('grades').insertOne({ ...data }, async function (error, response) {
+    db.collection('dd-214').insertOne({ ...data }, async function (error, response) {
       if (error) {
         res.status(404).send(false)
       } else {
