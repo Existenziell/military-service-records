@@ -59,7 +59,7 @@ html, body {
 }
 
 .connect-button {
-  @apply px-4 py-2 border border-brand hover:bg-brand/80 hover:scale-105 transition-all;
+  @apply px-2 py-1 border border-brand hover:bg-brand/80 hover:scale-105 transition-all;
 }
 
 .valid {

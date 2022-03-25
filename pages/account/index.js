@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useEffect, useState, useContext } from 'react'
+import { useState, useContext } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Wallet from '../../components/Wallet'
@@ -11,23 +11,19 @@ const Account = () => {
   const { walletConnected, setWalletConnected } = useContext(AppContext)
 
   const data = {
-    "firstname": "John",
-    "middlename": "Peter",
-    "lastname": "Doe",
-    "email": "john@doe.com",
-    "birthdate": "02/11/1971",
-    "gradelevel": "4th",
-    "satScore": "960",
-    "actScore": "1001",
-    "cltScore": "2620",
-    "date": "2021/09/16"
+    firstname: "John",
+    middlename: "Peter",
+    lastname: "Doe",
+    email: "john@doe.com",
+    birthdate: "02/11/1971",
+    department: 'Infantry',
+    socialsecurity: 'AAA-GG-SSSS',
+    grade: 'Lieutenant',
+    paygrade: 'W4',
+    birthdate: '1974/04/12',
+    message: 'testing...',
+    date: "2021/09/16"
   }
-
-  useEffect(() => {
-    // const data = window.localStorage.getItem(localStorageKey)
-    // if (!data) setData({})
-    // setData(JSON.parse(data))
-  }, [])
 
   return (
     <>

@@ -1,22 +1,6 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import { localStorageKey } from '../../context/AppContext'
-import Link from 'next/link'
 
 const Activity = () => {
-
-  const data = {
-    "firstname": "John",
-    "middlename": "Peter",
-    "lastname": "Doe",
-    "email": "john@doe.com",
-    "birthdate": "02/11/1971",
-    "gradelevel": "4th",
-    "satScore": "960",
-    "actScore": "1001",
-    "cltScore": "2620",
-    "date": ""
-  }
 
   return (
     <>
@@ -40,14 +24,14 @@ const Activity = () => {
               <tr>
                 <td>May 26, 2022</td>
                 <td>48.132.130.72</td>
-                <td>Johnson (teacher)</td>
+                <td>Johnson (commander)</td>
                 <td>Added grade</td>
                 <td><a href='https://ropsten.etherscan.io/tx/0x8a360917e01c35eb118de1792836f92770654f02c35d19ff51972e28de6c247a' target='_blank'>&rarr; Verify</a></td>
               </tr>
               <tr>
                 <td>July 1, 2022</td>
                 <td>39.68.24.198</td>
-                <td>Garcia (teacher)</td>
+                <td>Garcia (commander)</td>
                 <td>Added grade</td>
                 <td><a href='https://ropsten.etherscan.io/tx/0x8a360917e01c35eb118de1792836f92770654f02c35d19ff51972e28de6c247a' target='_blank'>&rarr; Verify</a></td>
               </tr>
@@ -61,7 +45,7 @@ const Activity = () => {
               <tr>
                 <td>October 8, 2022</td>
                 <td>134.32.31.243</td>
-                <td>Miller (teacher)</td>
+                <td>Miller (commander)</td>
                 <td>Reviewed grade</td>
                 <td><a href='https://ropsten.etherscan.io/tx/0x8a360917e01c35eb118de1792836f92770654f02c35d19ff51972e28de6c247a' target='_blank'>&rarr; Verify</a></td>
               </tr>

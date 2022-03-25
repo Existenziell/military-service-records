@@ -15,11 +15,12 @@ export const StateProvider = ({ children }) => {
     middlename: '',
     lastname: '',
     email: '',
+    department: '',
+    socialsecurity: '',
+    grade: '',
+    paygrade: '',
     birthdate: '',
-    gradelevel: '',
-    satScore: '',
-    actScore: '',
-    cltScore: '',
+    message: '',
     date: '',
   })
 
